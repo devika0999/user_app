@@ -6,7 +6,21 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
+const appRoutes:Routes=[
+
+  {
+    path:"",component:SigninComponent
+  },
+  {
+    path:"signup",component:SignupComponent
+  },
+  {
+    path:"dashboard",component:DashboardComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +30,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
