@@ -18,19 +18,23 @@
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;"><a class="navbar-brand" href="/">Sign into your account</a></h5>
   
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
-                      <input type="text" id="form2Example17" class="form-control form-control-lg" name="userName" [(ngModel)]="userName"/>
+                      
+                        <input type="text" id="form2Example17" class="form-control form-control-lg" name="username" [(ngModel)]="username">
                       <label class="form-label" for="form2Example17">USERNAME</label>
+
                     </div>
   
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
-                      <input type="password" id="form2Example27" class="form-control form-control-lg" name="password" [(ngModel)]="password" />
+                      
+                        <input type="password" id="form2Example27" class="form-control form-control-lg" name="password" [(ngModel)]="password" >
                       <label class="form-label" for="form2Example27">PASSWORD</label>
+
                     </div>
   
                     <div class= "col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 pt-1 mb-4">
                         
                         
-                        <a href="/dashboard" class="btn btn-dark btn-lg btn-block" role="button">LOGIN</a>
+                        <a href="/dashboard" class="btn btn-dark btn-lg btn-block" role="button" (click)="readValues()">LOGIN</a>
                       
                       
                       
