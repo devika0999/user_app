@@ -8,6 +8,8 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ProductlistComponent } from './productlist/productlist.component';
+import { HttpClientModule} from '@angular/common/http';
 
 const appRoutes:Routes=[
 
@@ -19,6 +21,9 @@ const appRoutes:Routes=[
   },
   {
     path:"dashboard",component:DashboardComponent
+  },
+  {
+    path:"cart",component:ProductlistComponent
   }
 ]
 @NgModule({
@@ -26,12 +31,14 @@ const appRoutes:Routes=[
     AppComponent,
     SigninComponent,
     SignupComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProductlistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

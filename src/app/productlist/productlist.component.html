@@ -1,0 +1,47 @@
+<section class="vh-200" style="background-color:#9A616D;">
+
+<div class="container py-5 h-100">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            
+            <div class="row g-3">
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                                        <!-- As a link -->
+                    <nav class="navbar bg-light">
+                        <div class="container-fluid">
+                        <a class="navbar-brand" href="/">Back</a>
+                        </div>
+                    </nav>
+  
+  
+
+
+                    <div class="row">
+                        <div *ngFor="let i of productlist"class="col col-12 col-sm-4 col-md-4 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="card" >
+                                <img height="200px"src="{{i.image}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">{{i.title}}</h5>
+                                  <p class="card-text">{{i.description}}</p>
+                                  <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+        </div></div></div>
+
+    </section>
+  
+
+
+
+
+
+               
+           
+
